@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EJ1</name>
+    </assembly>
+    <members>
+        <member name="T:EJ1.Circulo">
+            <summary>
+            Clase Circulo.
+            </summary>
+        </member>
+        <member name="M:EJ1.Circulo.#ctor(EJ1.Punto,System.Double)">
+            <summary>
+            Instancia un objeto de la clase Circulo.
+            </summary>
+            <param name="pCentro"> Centro del Ciruclo. </param>
+            <param name="pRadio"> Radio del Ciruclo. </param>
+        </member>
+        <member name="M:EJ1.Circulo.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Instancia un objeto de la clase Circulo.
+            </summary>
+            <param name="pX"> Coordenada X del Centro del Circulo. </param>
+            <param name="pY"> Coordenada Y del Centro del Circulo. </param>
+            <param name="pRadio"> Radio del Ciruclo. </param>
+        </member>
+        <member name="P:EJ1.Circulo.Centro">
+            <summary>
+            Centro del Circulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Circulo.Radio">
+            <summary>
+            Radio del Circulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Circulo.Area">
+            <summary>
+            Area del Circulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Circulo.Perimetro">
+            <summary>
+            Perimetro del Circulo.
+            </summary>
+        </member>
+        <member name="T:EJ1.Facade">
+            <summary>
+            Clase que implementa el Controlador de Fachada.
+            </summary>
+        </member>
+        <member name="M:EJ1.Facade.ObtenerDistanciaEntreLosDosPuntos(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Obtiene la distancia entre dos puntos.
+            </summary>
+            <param name="pX1"> Coordena X del primer punto. </param>
+            <param name="pY1"> Coordena Y del primer punto. </param>
+            <param name="pX2"> Coordena X del segundo punto. </param>
+            <param name="pY2"> Coordena Y del segundo punto. </param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EJ1.Facade.ObtenerPerimetroDelTriangulo(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" -->
+        <!-- Badly formed XML comment ignored for member "M:EJ1.Facade.ObtenerAreaDelTriangulo(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" -->
+        <member name="M:EJ1.Facade.ObtenerPerimetroDelCirculo(System.Double,System.Double,System.Double)">
+            <summary>
+            Obtiene el Perímetro del Circulo.
+            </summary>
+            <param name="pX"> Coordenada X del Centro del Circulo. </param>
+            <param name="pY"> Coordenada Y del Centro del Circulo. </param>
+            <param name="pRadio"> Radio del Ciruclo. </param>
+            <returns></returns>
+        </member>
+        <member name="M:EJ1.Facade.ObtenerAreaDelCirculo(System.Double,System.Double,System.Double)">
+            <summary>
+            Obtiene el Área del Circulo.
+            </summary>
+            <param name="pX"> Coordenada X del Centro del Circulo. </param>
+            <param name="pY"> Coordenada Y del Centro del Circulo. </param>
+            <param name="pRadio"> Radio del Ciruclo </param>
+            <returns></returns>
+        </member>
+        <member name="T:EJ1.Punto">
+            <summary>
+            Clase Punto.
+            </summary>
+        </member>
+        <member name="M:EJ1.Punto.#ctor(System.Double,System.Double)">
+            <summary>
+            Instancia un objeto de la clase Punto.
+            </summary>
+            <param name="pX"> Coordenada X del punto. </param>
+            <param name="pY"> Coordenada Y del punto. </param>
+        </member>
+        <member name="P:EJ1.Punto.X">
+            <summary>
+            Coordenada X del punto.
+            </summary>
+        </member>
+        <member name="P:EJ1.Punto.Y">
+            <summary>
+            Coordenada Y del punto.
+            </summary>
+        </member>
+        <member name="M:EJ1.Punto.CalcularDistanciaDesde(EJ1.Punto)">
+            <summary>
+            Calcula la distancia entre dos objetos Punto.
+            </summary>
+            <param name="pPunto"> Punto del cual se desea calcular la distancia. </param>
+            <returns></returns>
+        </member>
+        <member name="T:EJ1.Triangulo">
+            <summary>
+            Clase Triangulo.
+            </summary>
+        </member>
+        <member name="M:EJ1.Triangulo.#ctor(EJ1.Punto,EJ1.Punto,EJ1.Punto)">
+            <summary>
+            Instancia un objeto de la clase Triangulo.
+            </summary>
+            <param name="pPunto1"></param>
+            <param name="pPunto2"></param>
+            <param name="pPunto3"></param>
+        </member>
+        <member name="P:EJ1.Triangulo.Punto1">
+            <summary>
+            Primer Punto del Triangulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Triangulo.Punto2">
+            <summary>
+            Segundo Punto del Triangulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Triangulo.Punto3">
+            <summary>
+            Tercer Punto del Triangulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Triangulo.Perimetro">
+            <summary>
+            Calcula el Perímetro del Triangulo.
+            </summary>
+        </member>
+        <member name="P:EJ1.Triangulo.Area">
+            <summary>
+            Calcula el Área del Triangulo con la formula de Herón.
+            </summary>
+        </member>
+    </members>
+</doc>

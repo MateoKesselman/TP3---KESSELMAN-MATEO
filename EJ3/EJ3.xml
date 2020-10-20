@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EJ3</name>
+    </assembly>
+    <members>
+        <member name="T:EJ3.CriterioDeSeleccion">
+            <summary>
+            Clase que implementan estrategias para la elección de un turno.
+            </summary>
+        </member>
+        <member name="M:EJ3.CriterioDeSeleccion.SeleccionDelProximoTurno(EJ3.Turno[])">
+            <summary>
+            Método que selecciona el próximo turno correspondiente.
+            </summary>
+            <param name="pTrunos"> Arreglo de turnos disponibles. </param>
+            <returns></returns>
+        </member>
+        <member name="T:EJ3.Facade">
+            <summary>
+            Clase que representa el patrón Controlador de Fachada.
+            </summary>
+        </member>
+        <member name="M:EJ3.Facade.#ctor">
+            <summary>
+            Instancia un objeto de la clase Facade.
+            </summary>
+        </member>
+        <member name="M:EJ3.Facade.ObtenerTurnoEnSalaDeConsulta">
+            <summary>
+            Obtiene turno correspondiente en la sala de Consultas.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EJ3.Facade.ObtenerTurnoEnSalaDeUrgencia">
+            <summary>
+            Obtiene turno correspondiente en la sala de Urgencias.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EJ3.FIFO">
+            <summary>
+            Clase que representa el Criterio de selección FIFO.
+            </summary>
+        </member>
+        <member name="M:EJ3.FIFO.SeleccionDelProximoTurno(EJ3.Turno[])">
+            <summary>
+            Método que selecciona el próximo turno correspondiente.
+            </summary>
+            <param name="pTurnos"> Arreglo de turnos disponibles. </param>
+            <returns></returns>
+        </member>
+        <member name="T:EJ3.Paciente">
+            <summary>
+            Clase que representa un Paciente.
+            </summary>
+        </member>
+        <member name="M:EJ3.Paciente.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Instancia un objeto de la clase Paciente.
+            </summary>
+            <param name="pNombre"></param>
+            <param name="pApellido"></param>
+            <param name="pEdad"></param>
+            <param name="pDni"></param>
+        </member>
+        <member name="P:EJ3.Paciente.Nombre">
+            <summary>
+            Nombre del paciente.
+            </summary>
+        </member>
+        <member name="P:EJ3.Paciente.Apellido">
+            <summary>
+            Apellido del paciente.
+            </summary>
+        </member>
+        <member name="P:EJ3.Paciente.Edad">
+            <summary>
+            Edad del paciente.
+            </summary>
+        </member>
+        <member name="P:EJ3.Paciente.DNI">
+            <summary>
+            DNI del paciente.
+            </summary>
+        </member>
+        <member name="T:EJ3.Sala">
+            <summary>
+            Clase que representa una Sala.
+            </summary>
+        </member>
+        <member name="M:EJ3.Sala.#ctor(EJ3.Turno[],EJ3.CriterioDeSeleccion)">
+            <summary>
+            Instancia un objeto de la clase Sala.
+            </summary>
+            <param name="pTurnos"> Arreglo de Turnos disponibles. </param>
+            <param name="pCriterioDeSeleccion"> Estrategia empleada para la selección de próximo turno. </param>
+        </member>
+        <member name="M:EJ3.Sala.ObtenerProximoTurno">
+            <summary>
+            Método que obtiene el próximo turno correspondiente.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EJ3.Triaje">
+            <summary>
+            Clase que representa el Criterio de selección Triaje.
+            </summary>
+        </member>
+        <member name="M:EJ3.Triaje.SeleccionDelProximoTurno(EJ3.Turno[])">
+            <summary>
+            Método que selecciona el próximo turno correspondiente.
+            </summary>
+            <param name="pTurnos"> Arreglo de turnos disponibles. </param>
+            <returns></returns>
+        </member>
+        <member name="T:EJ3.Turno">
+            <summary>
+            Clase que representa un Turno.
+            </summary>
+        </member>
+        <member name="M:EJ3.Turno.#ctor(System.Int32,EJ3.Paciente,System.Int32,System.DateTime)">
+            <summary>
+            Instancia un objeto de la clase Turno.
+            </summary>
+            <param name="pNumero"> Número de Turno. </param>
+            <param name="pPaciente"> Paciente del Turno. </param>
+            <param name="pNivelDeUrgencia"> Nivel de urgencia del Turno. </param>
+            <param name="pFechaYHoraDeLlegada"> Fecha y Hora de llegada del paciente. </param>
+        </member>
+        <member name="P:EJ3.Turno.Numero">
+            <summary>
+            Número del Turno.
+            </summary>
+        </member>
+        <member name="P:EJ3.Turno.Paciente">
+            <summary>
+            Paciente del turno.
+            </summary>
+        </member>
+        <member name="P:EJ3.Turno.NivelDeUrgencia">
+            <summary>
+            Nivel de urgencia del Turno.
+            </summary>
+        </member>
+        <member name="P:EJ3.Turno.FechaYHoraDeLlegada">
+            <summary>
+            Fecha y hora de llegada del paciente. 
+            </summary>
+        </member>
+        <member name="P:EJ3.Turno.Atendido">
+            <summary>
+            Indica si el turno fue o no atendido.
+            </summary>
+        </member>
+        <member name="M:EJ3.Turno.TiempoEnEspera">
+            <summary>
+            Tiempo en espera que lleva el paciente correspondiente al Turno.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
